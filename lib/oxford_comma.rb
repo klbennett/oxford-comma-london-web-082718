@@ -4,6 +4,5 @@ def oxford_comma(array)
   elsif array length = 2  
 array[0] + array [1]
 else
-array[0...-1]
-array.join(",")
+array[0...-2].join(",") << "and" << array[-1]
 end
